@@ -10,8 +10,8 @@
         <relativePath/> 
     </parent>
     
-    <groupId>controle</groupId>
-    <artifactId>estoque</artifactId>
+    <groupId>control</groupId>
+    <artifactId>stock</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>controle-estoque</name>
     <description>Demo project for Spring Boot</description>
