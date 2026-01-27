@@ -1,3 +1,0 @@
-2026-01-25 03:04:11.511566-03:00 jdbc[13]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]checksum"; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT"; SQL statement:
-checksum [42001-240]
