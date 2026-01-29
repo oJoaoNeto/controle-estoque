@@ -1,11 +1,11 @@
 package control.stock.entity; 
 
-import control.stock.entity.Category;
 
 import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -41,6 +41,9 @@ public class Product{
   @ManyToOne(optional = false)
   @JoinColumn(name = "category_id", nullable = false)
   private Category category;
+
+  @OneToMany(targetEntity = ProductSupplier.class, mappedBy = "product")
+  private List<ProductSupplier> price_table = new ArrayList<>();
 
   private float weight;
 

@@ -1,6 +1,7 @@
 package control.stock.entity;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -33,7 +34,7 @@ public class Category {
     targetEntity = Product.class,
     mappedBy = "category"
   )
-  private ArrayList<Product> products;
+  private List<Product> products = new ArrayList<>();
 
   private String description;
 }
